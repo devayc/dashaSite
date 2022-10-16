@@ -1,0 +1,27 @@
+1. header-menu работает как переход по 1 лендингу
+
+2.структура:
+
+--------header--------------(record button ???) => (modalWindow)
+
+--------hero----------------
+
+---------about--------------
+
+--------PhotoBlock----------(link to gallary)
+
+-------Procedures-----------(description)
+
+--------workMaterial--------
+
+--------reviews-------------
+
+--------footer---------------
+
+3. решить вопрос будет ли работать запись через сайт
+
+
+4. нужно выделить место под сылку на галерею в будущем
+
+
+good Link ===>>>> https://brovistar.ru ; http://browmalyshka.ru (Photo, discountContent )
