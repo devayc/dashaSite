@@ -1,0 +1,143 @@
+body{
+    background: #6C559B;
+}
+.wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.bg-hero{
+    background-image: url(../image/Foto.png);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1050px;
+}
+.header{
+  padding-top: 50px;
+  margin-bottom: 185px;
+}
+.header__container{
+    align-items: center;
+}
+.logo{
+    font-family: 'Montserrat';
+    font-style: italic;
+    text-transform: uppercase ;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+.nav-menu__list{
+    padding-left: 35px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.nav-menu__link{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+}
+.header__phone-block{
+    text-align: right;
+}
+.phone-block__link{
+display: inline-block;
+letter-spacing: 1px;
+margin-bottom: 6px;
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+}
+.phone-block__info {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+    padding-right: 20px;
+}
+.hero{
+    margin-bottom: 506px;
+}
+.title{
+    margin-bottom: 70px;
+    font-family: 'Sprite';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+    color: #FFFFFF;
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+}
+.button{
+    background: #FCFF69;
+    border-radius: 50px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1C1C1C;
+    padding: 16px 50px;
+}
+.about-us{
+   background-image: url(../image/about.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding-top: 89px;
+   padding-bottom: 200px;
+}
+.sub-title{
+    font-family: 'Sprite';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+    color: #FFFFFF;
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+}
+.default-text{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.about-us__title{
+    margin-bottom: 30px;
+}
+.about-us__text{
+    margin-bottom: 50px;
+}
+
+
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 45%;
+}
+
+.fullscreen-bg__video {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.video{
+    height: 700px;
+    overflow: hidden;
+}
+
+.gallery__title{
+    padding-top: 100px;
+}
