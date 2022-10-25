@@ -15,37 +15,22 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-$(document).ready(function(){
-    $(document).on("click","a", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-        event.preventDefault();
-        //забираем идентификатор бока с атрибута href
-        const id = $(this).attr('href');
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
+$(document).ready(function () {
+    $('[data-target]').click((function (event){
+        event.preventDefault()
+        const id = $(this).attr('href')
+        console.log($(this))
         const top = $(id).offset().top;
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1100);
-    });
-    // $("#menu2").on("click","a", function (event) {
-    //     //отменяем стандартную обработку нажатия по ссылке
-    //     event.preventDefault();
-    //     //забираем идентификатор бока с атрибута href
-    //     const id = $(this).attr('href');
-    //     //узнаем высоту от начала страницы до блока на который ссылается якорь
-    //     const top = $(id).offset().top;
-    //     //анимируем переход на расстояние - top за 1500 мс
-    //     $('body,html').animate({scrollTop: top}, 900);
-    // });
+    }))
 
-});
-
-$(".service-btn").click(event => {
+    $(".service-btn").click(event => {
     console.log(event)
     event.preventDefault()
     $('.fixed-overlay__modal').fadeIn()
-})
-
-$('.fixed-overlay').click((e) => {
+    })
+    $('.fixed-overlay').click((e) => {
     const modalOverlay = document.querySelector('.fixed-overlay')
     console.log(modalOverlay)
     if (e.target === modalOverlay){
@@ -56,3 +41,8 @@ $('.close-modal').click(() => {
     $('.fixed-overlay__modal').fadeOut()
        
 })
+});
+
+
+
+
