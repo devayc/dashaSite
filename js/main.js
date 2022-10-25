@@ -25,7 +25,7 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: top}, 1100);
     }))
 
-    $(".service-btn").click(event => {
+    $("[data-modal]").click(event => {
     console.log(event)
     event.preventDefault()
     $('.fixed-overlay__modal').fadeIn()
@@ -37,10 +37,28 @@ $(document).ready(function () {
         $('.fixed-overlay__modal').fadeOut()
     }
 })
-$('.close-modal').click(() => {
-    $('.fixed-overlay__modal').fadeOut()
+    $('.close-modal').click(() => {
+        $('.fixed-overlay__modal').fadeOut()
        
-})
+    })
+    $('.humburger-container').click(() => {
+        console.log($('.humburger-container'))
+        if ($('.mob-menu').hasClass('mob-menu-out')) {
+            $('.mob-menu').removeClass('mob-menu-out')
+            $("#top").addClass('top')
+            $("#bottom").addClass('bottom')
+            $("#middle").addClass('middle')
+            $('.bar').addClass('bar2')
+            console.log('first-click')
+        } else {
+            $('.mob-menu').addClass('mob-menu-out')
+            $("#top").removeClass('top')
+            $("#bottom").removeClass('bottom')
+            $("#middle").removeClass('middle')
+             $('.bar').removeClass('bar2')
+            console.log('second-click')
+        }
+    })
 });
 
 
