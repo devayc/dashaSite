@@ -44,21 +44,28 @@ $(document).ready(function () {
     $('.humburger-container').click(() => {
         console.log($('.humburger-container'))
         if ($('.mob-menu').hasClass('mob-menu-out')) {
-            $('.mob-menu').removeClass('mob-menu-out')
-            $("#top").addClass('top')
-            $("#bottom").addClass('bottom')
-            $("#middle").addClass('middle')
-            $('.bar').addClass('bar2')
-            console.log('first-click')
+            OpenMenu()
         } else {
-            $('.mob-menu').addClass('mob-menu-out')
+            CloseMenu()
+        }
+    })
+    $('.nav-mob-menu__link').click(() => {
+        CloseMenu()
+    })
+    function OpenMenu() {
+        $('.mob-menu').removeClass('mob-menu-out')
+        $("#top").addClass('top')
+        $("#bottom").addClass('bottom')
+        $("#middle").addClass('middle')
+        $('.bar').addClass('bar2')
+    }
+    function CloseMenu() {
+         $('.mob-menu').addClass('mob-menu-out')
             $("#top").removeClass('top')
             $("#bottom").removeClass('bottom')
             $("#middle").removeClass('middle')
-             $('.bar').removeClass('bar2')
-            console.log('second-click')
-        }
-    })
+            $('.bar').removeClass('bar2')
+    }
 });
 
 
