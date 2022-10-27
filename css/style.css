@@ -5,6 +5,8 @@ body{
 .wrapper{
     max-width: 1920px;
     margin: 0 auto;
+    background-image: url(../image/BG.png);
+    background-repeat:no-repeat;
 }
 /* .bg-hero{
     background-image: url(../image/Foto.png);
@@ -73,6 +75,12 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
 }
 .hero{
     margin-bottom: 506px;
+    position: relative;
+}
+.hero-image{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .title{
     margin-bottom: 70px;
@@ -303,6 +311,7 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
 .modal-form{
     display: flex;
     flex-direction: column;
+    
 }
 .form-lable{
     color:#000000;
@@ -351,7 +360,7 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
 
 .fixed-overlay__modal {
     text-align: center;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     display: none;
 }
 
@@ -364,8 +373,10 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
 }
 
 .modal {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* vertical-align: middle; */
 }
 @media(max-width:992px){
     .header-nav-coll{
@@ -483,6 +494,33 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
                 }
 
 }
+@media(max-width:768px){
+    .price__service{
+        flex-direction: column;   
+    }
+        .modal-form{
+            padding: 15px 0;
+        }
+    .service-text__text-head{
+        min-height: 146px;
+
+    }
+    .service-title{
+        margin: 10px 0 ;
+    }
+        .service-text__text-head{
+            margin-bottom: 0;
+        }
+        .service-image{
+            margin-right: 0;
+        }
+        .price__service:not(:last-child){
+            margin-bottom: 50px;
+        }
+                .service-subtitle{
+                    font-size: 14px;
+                }
+}
 @media(max-width:450px){
     .phone-block__link{
         font-size: 16px;
@@ -491,14 +529,15 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
     .modalwindow{
         max-width: 100vw;
         max-height: 100vh;
-        padding: 25px;
+        padding: 5px;
     }
     .modal__title{
         font-size: 50px ;
         margin-bottom: 40px;
     }
-    .fixed-overlay{
-        top: -100px;
+    .input-group{
+        /* align-items: unset; */
+        text-align: left;
     }
     .phone-block__info{
         font-size: 12px;
