@@ -211,43 +211,43 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
 .service-btn{
     width: 100%;
 }
-.use{
-    margin-bottom: 100px;
-}
-.use-cards{
-    justify-content: space-between;
-}
-.use-card{
-    position: relative;
-    border-radius:20px;
-    padding: 0;
-    max-width: 700px;
-    max-height: 400px;
-    margin-bottom: 20px;
-}
-.use-image{
-    border-radius: 20px;
-    position: relative;
-    z-index: 2;
-    transition: opacity 0.2s;
-}
-.use-image:hover, .use-image:active{
-    opacity: 0.1;
-}
-.use__card-text{
-    background: rgba(0, 0, 0, 0.8);
-    mix-blend-mode: normal;
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    max-width: 700px;
-    height: 400px;
-    padding: 70px;
+            .use{
+                margin-bottom: 100px;
+            }
+            
+            .use-card{
+                position: relative;
+                border-radius:20px;
+            }
+            .use-image{
+                border-radius: 20px;
+                position: relative;
+                z-index: 2;
+                transition: opacity 0.2s;
+            }
+            .use-image:hover, .use-image:active{
+                opacity: 0.1;
+            }
+            .use__card-text{
+                background: rgba(0, 0, 0, 0.8);
+                mix-blend-mode: normal;
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                height: 99%;
+                width: 100%;
+                padding: 70px;
 
-}
+            }
+            .container-card{
+                position: relative;
+                max-width: 700px;
+                margin: 0 auto;
+
+            }
 .reviews{
     margin-bottom: 100px;
 }
@@ -279,7 +279,7 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 50px;
 }
 .footer{
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 .social-link{
     display: flex;
@@ -494,12 +494,23 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
                 }
 
 }
+@media(max-width:1200px){
+    .use-card{
+        text-align: center;
+    }
+    .use-image{
+        max-width: 100%;
+    }
+}
 @media(max-width:768px){
     .price__service{
         flex-direction: column;   
     }
         .modal-form{
             padding: 15px 0;
+        }
+        .reviews-item{
+            max-width: unset;
         }
     .service-text__text-head{
         min-height: 146px;
@@ -517,9 +528,18 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
         .price__service:not(:last-child){
             margin-bottom: 50px;
         }
-                .service-subtitle{
-                    font-size: 14px;
-                }
+        .service-subtitle{
+            font-size: 14px;
+        }
+        .use__card-text{
+            padding: 35px;
+        }
+        .service-title{
+            font-size: 19px;
+        }
+        .text-in-card{
+            font-size: 16px;
+        }
 }
 @media(max-width:450px){
     .phone-block__link{
@@ -542,5 +562,8 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
     .phone-block__info{
         font-size: 12px;
         padding-right: 10px;
+    }
+    .price__title{
+        text-align: center;
     }
 }
