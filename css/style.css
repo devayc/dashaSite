@@ -127,6 +127,8 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
    background-position: center;
    padding-top: 89px;
    padding-bottom: 200px;
+   position: relative;
+   z-index: 3;
 }
 .background{
     background-image: url(../image/BG.png);
@@ -423,6 +425,7 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
 
     .header {
         padding-top: 0;
+        margin-bottom: 80px;
     }
 
     /* burger style */
@@ -539,6 +542,9 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
         line-height: 20px;
         color: #000000;
     }
+    .hero{
+        margin-bottom: 30px;
+    }
          .hero-image {
              right: -223px;
              top: -65px;
@@ -609,7 +615,7 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
         font-size: 12px;
         padding-right: 10px;
     }
-    .price__title{
+    .sub-title{
         text-align: center;
     }
 
