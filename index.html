@@ -88,14 +88,20 @@
         </header>
         <main class="main">
           <section class="hero">
+            <img class="hero-image-cloud" src="./image/heroCloud.png" alt="">
             <div class="container">
-              <!-- <img width="888px" height="886px" src="./image/Foto.png" alt="" class="hero-image"> -->
               <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-12">
                   <h1 class="title">
                     брови, которые<br />
                     будут приковывать взляды
                   </h1>
+                </div>
+                <div class="hero-img-con col-md-4">
+                  <picture>
+                    <source srcset="./image/heroBgsm.png" media="(max-width: 992px)">
+                    <img class="hero-image" src="./image/dasha.png" alt="">
+                  </picture>
                 </div>
               </div>
               <div class="row">
@@ -110,18 +116,20 @@
               </div>
             </div>
           </section>
-          <!-- <section id="about" class="about-us">
+          <section id="about" class="about-us">
             <div class="container">
               <div class="row">
-                <div class="col-xl-5">
-                  <img
-                    width="460px"
-                    height="460px"
-                    src="./image/aboutUs.png"
+                <div class="col-xxl-5 col-sm-12">
+                  <picture>
+                    <source srcset="./image/aboutUs-sm.jpg" media="(max-width: 1400px)">
+                    <img
+                    class="about-us__image"
+                    src="./image/aboutUs.jpg"
                     alt=""
-                  />
+                    />
+                  </picture>
                 </div>
-                <div class="col-6 col-lg-6">
+                <div class="col-xxl-7 col-sm-12">
                   <h2 class="sub-title about-us__title">O нас</h2>
                   <p class="about-us__text default-text">
                     Задача организации, в особенности же постоянный количественный
@@ -141,7 +149,7 @@
               </div>
             </div>
           </section>
-          <section class="video">
+           <section class="video">
             <video
               loop=""
               muted=""
@@ -159,7 +167,7 @@
                 <input class="button" value="Ещё" type="submit" />
               </div>
             </div>
-          </section> -->
+          </section>
           <section id="price" class="price">
             <div class="container">
               <h2 class="sub-title price__title">Услуги</h2>
