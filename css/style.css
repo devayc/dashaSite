@@ -116,9 +116,13 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     display: inline-block;
 }
+
 .button:hover{
     background: #f4f748;
     transform: scaleX(1.1);
+}
+.button:disabled {
+    background-color: #bcbd72;
 }
 .about-us{
    background-image: url(../image/about.png);
@@ -189,6 +193,13 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
 .gallery__title{
     padding-top: 100px;
     margin-bottom: 50px;
+}
+.gallary-items{
+    margin-bottom: 20px;
+}
+.gallary-img{
+    width: 100%;
+    border-radius: 20px;
 }
 
 .gallary-btn{
@@ -408,6 +419,9 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
         border-radius:20px;
         margin-bottom: 40px;
     }
+    .close-lg{
+        display: none;
+    }
 }
 
 @media(max-width:1200px){
@@ -552,6 +566,9 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
 
 }
 @media(max-width:768px){
+    .close-sm{
+        display: none;
+    }
     .hero-img-con{
         display: none;
     }
