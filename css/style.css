@@ -1,4 +1,7 @@
-
+.owl-carousel {
+    -ms-touch-action: none;
+    touch-action: none;
+}
 body{
     background: #6C559B;
 }
@@ -55,15 +58,15 @@ body{
     text-align: right;
 }
 .phone-block__link{
-display: inline-block;
-letter-spacing: 1px;
-margin-bottom: 6px;
-font-family: 'Montserrat';
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-color: #FFFFFF;
-text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
 }
 .phone-block__info {
     font-family: 'Montserrat';
@@ -155,7 +158,7 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
     color: #FFFFFF;
 }
 .about-us__title{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .about-us__text{
     margin-bottom: 50px;
@@ -207,7 +210,7 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
 }
 .price__title{
-    margin-bottom: 61px;
+    margin-bottom: 50px;
 }
 .price__service{
     display: flex;
@@ -265,7 +268,7 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
     left: 0;
     z-index: 1;
     height: 99%;
-    width: 100%;
+    width: 102%;
     padding: 70px;
 
 }
@@ -305,8 +308,14 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
 .reviews__title{
     margin-bottom: 50px;
 }
+.slide-one {
+    display: none !important; 
+}
 .footer{
     padding-bottom: 60px;
+}
+.footer-row{
+    align-items:center;
 }
 .social-link{
     display: flex;
@@ -406,6 +415,9 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
     /* vertical-align: middle; */
 }
 @media(max-width:1400px){
+    .hero{
+        margin-bottom: 350px;
+    }
     .hero-image{
         right: -108px;
     }
@@ -418,19 +430,36 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
     .about-us__image{
         border-radius:20px;
         margin-bottom: 40px;
+        display: none;
     }
     .close-lg{
         display: none;
     }
+    .footer-nav{
+        margin-bottom: 20px;
+    }
+    .footer-menu__list{
+        padding: 0;
+    }
+    .service-text{
+        max-width: 465px;
+    }
+    .use__card-text {
+        width: 100%;
+    }
 }
 
 @media(max-width:1200px){
+    .hero, .about, .gallery, .price, .use, .reviews{
+        margin-bottom: 50px;
+    }
     .use-card{
         text-align: center;
     }
     .use-image{
         max-width: 100%;
     }
+   
 }
 @media(max-width:992px) {
     .header-nav-coll {
@@ -459,7 +488,7 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
         display: block;
         height: 4px;
         width: 30px;
-        background: #000000;
+        background: #FFFFFF;
         margin: 7px auto;
     }
 
@@ -556,59 +585,79 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
         line-height: 20px;
         color: #000000;
     }
-    .hero{
-        margin-bottom: 30px;
+    .hero-image {
+        right: -223px;
+        top: -65px;
     }
-         .hero-image {
-             right: -223px;
-             top: -65px;
-         }
 
 }
 @media(max-width:768px){
+    .sub-title{
+        text-align: center;
+    }
     .close-sm{
         display: none;
     }
     .hero-img-con{
         display: none;
     }
+    .gallary-items{
+        display: none;
+    }
+    .slide-one{
+        display: block !important;
+    }
     .price__service{
         flex-direction: column;   
     }
-        .modal-form{
-            padding: 15px 0;
-        }
-        .reviews-item{
-            max-width: unset;
-        }
+    .modal-form{
+        padding: 15px 0;
+    }
+    .reviews-item{
+        max-width: unset;
+    }
     .service-text__text-head{
         min-height: 146px;
-
+    }
+    .service-text{
+        max-width: none;
     }
     .service-title{
         margin: 10px 0 ;
     }
-        .service-text__text-head{
-            margin-bottom: 0;
-        }
-        .service-image{
-            margin-right: 0;
-        }
-        .price__service:not(:last-child){
-            margin-bottom: 50px;
-        }
-        .service-subtitle{
-            font-size: 14px;
-        }
-        .use__card-text{
-            padding: 17px;
-        }
-        .service-title{
-            font-size: 17px;
-        }
-        .text-in-card{
-            font-size: 12px;
-        }
+    .use__card-text {
+        height: 98%;
+    }
+    
+    .service-text__text-head{
+        margin-bottom: 0;
+    }
+    .service-image{
+        margin-right: 0;
+    }
+    .price__service:not(:last-child){
+        margin-bottom: 50px;
+    }
+    .service-subtitle{
+        font-size: 14px;
+    }
+    .use__card-text{
+        padding: 17px;
+    }
+    .service-title{
+        font-size: 17px;
+    }
+    .text-in-card{
+        font-size: 12px;
+    }
+    .reviews{
+        margin-bottom: 50px;
+    }
+    .footer-menu__list{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 @media(max-width:450px){
     .phone-block__link{
@@ -640,4 +689,5 @@ text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
         bottom: -623px;
         right: -129px;
     }
+   
 }

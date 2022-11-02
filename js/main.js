@@ -1,4 +1,21 @@
-$('.owl-carousel').owlCarousel({
+$('.slide-two').owlCarousel({
+    loop:true,
+    margin:20,
+    // nav:true,
+    responsive:{
+        0:{
+            items: 1,
+            width: 100
+        },
+        768:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+$('.slide-one').owlCarousel({
     loop:true,
     margin:20,
     // nav:true,
@@ -67,26 +84,16 @@ $(document).ready(function () {
         $("#middle").removeClass('middle')
         $('.bar').removeClass('bar2')
     }
-    // $('#more').click(() => {
-    //     if ($('.gallary-items').find('.close-sm')) {
-    //         let small= $('.gallary-items').find('.close-sm')
-    //         $(small).removeClass('close-sm')
-    //         console.log('')
-    //     } else {
-    //         console.log('da')
-    //        let big = $('.gallary-items').find('.close-lg')
-    //             big.removeClass('close-lg')
-    //     }
-    // })
     $('#more').click(() => {
         const gallary = $('.gallary-item')
         gallary.each((e) => {
-            console.log(gallary[e])
             if ($(gallary[e]).hasClass('close-sm')) {
                 $(gallary[e]).removeClass('close-sm')
+                console.log('da')
                return false
-            } else if($(gallary[e]).hasClass('close-lg')){
-               $(gallary[e]).removeClass('close-lg')
+            } else if ($(gallary[e]).hasClass('close-lg')) {
+                $(gallary[e]).removeClass('close-lg')
+                console.log('net')
                 $('#more').attr('disabled','disabled');
             }
         }) 
