@@ -592,6 +592,20 @@ body{
 
 }
 @media(max-width:768px){
+    .about-us{
+        text-align: center;
+    }
+    .button-reviews{
+        border:  1px solid #FCFF69;
+        background: transparent;
+        color: #FFFFFF;
+    }
+    .button-reviews:hover, .button-reviews:active, .button-reviews:focus{
+        border: 1px solid #FCFF69;
+        background: transparent;
+        color: #FFFFFF;
+       
+    }
     .sub-title{
         text-align: center;
     }
