@@ -311,6 +311,11 @@ body{
 .footer-row{
     align-items:center;
 }
+.footer-nav{
+    margin-bottom: 20px;
+    max-width: 1200px;
+
+}
 .social-link{
     display: flex;
     max-width: 180px;
@@ -430,7 +435,7 @@ body{
         display: none;
     }
     .footer-nav{
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     .footer-menu__list{
         padding: 0;
