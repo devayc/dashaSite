@@ -555,6 +555,9 @@ body{
         transition: ease-in-out transform .35s;
         z-index: 7;
     }
+    .mob-menu-container{
+        height: 100%;
+    }
 
     .mob-menu-out {
         transform: translateX(-1000px);
