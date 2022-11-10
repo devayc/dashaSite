@@ -116,7 +116,7 @@ body{
 
 .button:hover{
     background: #f4f748;
-    transform: scaleX(1.1);
+    /* transform: scaleX(1.1); */
 }
 .button:disabled {
     background-color: #bcbd72;
@@ -150,6 +150,11 @@ body{
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+}
+.about-us__text{
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 140%;
 }
 .about-us__title{
     margin-bottom: 50px;
@@ -202,6 +207,7 @@ body{
 .gallary-btn{
     max-width: 144px;
     margin: 0 auto;
+    display: none;
 }
 .price__title{
     margin-bottom: 50px;
@@ -228,6 +234,7 @@ body{
     line-height: 24px;
     color: #FFFFFF;
     text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px ;
 }
 .service-subtitle{
     flex: 1 1 auto;
@@ -312,8 +319,8 @@ body{
     align-items:center;
 }
 .footer-nav{
-    margin-bottom: 20px;
-    max-width: 1200px;
+    max-width: 688px;
+    margin: 20px auto;
 
 }
 .social-link{
@@ -446,12 +453,12 @@ body{
     .use__card-text {
         width: 100%;
     }
+    .gallary-btn{
+        display: block;
+   }
 }
 
 @media(max-width:1200px){
-    .hero, .about, .gallery, .price, .use, .reviews{
-        margin-bottom: 50px;
-    }
     .use-card{
         text-align: center;
     }
@@ -461,6 +468,14 @@ body{
    
 }
 @media(max-width:992px) {
+    .hero,
+    .about,
+    .gallery,
+    .price,
+    .use,
+    .reviews {
+        margin-bottom: 50px;
+    }
     .header-nav-coll {
         display: none;
     }
@@ -672,11 +687,9 @@ body{
     .reviews{
         margin-bottom: 50px;
     }
-    /* .footer-menu__list{
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    } */
+    .gallary-btn {
+        display: none;
+    }
     .footer-menu__list{
         flex-wrap: wrap;
         gap: 30px;

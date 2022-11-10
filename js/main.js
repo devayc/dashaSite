@@ -87,15 +87,11 @@ $(document).ready(function () {
     $('#more').click(() => {
         const gallary = $('.gallary-item')
         gallary.each((e) => {
-            if ($(gallary[e]).hasClass('close-sm')) {
-                $(gallary[e]).removeClass('close-sm')
-                console.log('da')
-               return false
-            } else if ($(gallary[e]).hasClass('close-lg')) {
+            if($(gallary[e]).hasClass('close-lg')) {
                 $(gallary[e]).removeClass('close-lg')
                 console.log('net')
-                $('#more').attr('disabled','disabled');
             }
+            $('#more').attr('disabled','disabled');
         }) 
     })
 });
