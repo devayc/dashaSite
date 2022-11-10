@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./modules/jquery-2.1.3.min.js"></script>
     <script defer src="modules/owl-carousel/owl.carousel.min.js"></script>
+    <script defer src="./js/phoneinput.js"></script>
     <script defer src="./js/main.js"></script>
-    <script defer src="./js/photos.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -604,8 +604,8 @@
             <form class="modal-form" action="">
               <p class="default-text form-lable">Укажите свои данные</p>
               <div class="input-group">
-                <input class="form-input" type="text" placeholder="Имя" />
-                <input class="form-input" type="tell" placeholder="Телефон" />
+                <input class="form-input" type="text" placeholder="ФИО" maxlength="60" />
+                 <input type="tel" class="form-input" data-tel-input placeholder="Телефон" maxlength="18" />
               </div>
               <div class="input-group">
                 <label for="#personal">

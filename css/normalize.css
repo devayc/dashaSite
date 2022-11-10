@@ -183,6 +183,14 @@ textarea {
   outline: none;
   border: none
 }
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 /**
  * Show the overflow in IE.
