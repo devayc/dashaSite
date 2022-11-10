@@ -50,7 +50,6 @@ $(document).ready(function () {
     })
     $('.fixed-overlay').click((e) => {
         const modalOverlay = document.querySelector('.fixed-overlay')
-        console.log(modalOverlay)
         if (e.target === modalOverlay) {
             $('.fixed-overlay__modal').fadeOut()
         }
@@ -94,6 +93,17 @@ $(document).ready(function () {
             $('#more').attr('disabled','disabled');
         }) 
     })
+    $(".modal-form").click(function () {
+        event.stopPropagation ()
+        console.log('ds')
+  if (($('#personal').prop("checked") && $('#policy').prop("checked"))) {
+      $(".form-button").removeAttr("disabled");
+      console.log('dis')
+  } else {
+      $(".form-button").attr("disabled", "disabled");
+      console.log('add')
+  }
+})
 });
 
 

@@ -604,8 +604,8 @@
             <form class="modal-form" action="">
               <p class="default-text form-lable">Укажите свои данные</p>
               <div class="input-group">
-                <input class="form-input" type="text" placeholder="ФИО" maxlength="60" />
-                 <input type="tel" class="form-input" data-tel-input placeholder="Телефон" maxlength="18" />
+                <input class="form-input" type="text" placeholder="ФИО" maxlength="60" required />
+                 <input type="tel" class="form-input" data-tel-input placeholder="Телефон" maxlength="18" required />
               </div>
               <div class="input-group">
                 <label for="#personal">
@@ -620,6 +620,7 @@
                     class="button form-button"
                     type="submit"
                     value="Записаться"
+                    disabled
                   />
                 </label>
             </form>
