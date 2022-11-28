@@ -1,11 +1,12 @@
 $('.slide-two').owlCarousel({
     loop:true,
-    margin:20,
+    margin: 20,
+   
     // nav:true,
     responsive:{
         0:{
             items: 1,
-            width: 100
+            width: 100,
         },
         768:{
             items:2
@@ -22,7 +23,7 @@ $('.slide-one').owlCarousel({
     responsive:{
         0:{
             items: 1,
-            width: 100
+            width: 100,
         },
         768:{
             items:2
