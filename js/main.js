@@ -40,7 +40,6 @@ $(document).ready(function () {
         const id = $(this).attr('href')
         console.log($(this))
         const top = $(id).offset().top;
-        //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({ scrollTop: top }, 1100);
     }))
 
