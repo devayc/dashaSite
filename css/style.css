@@ -713,6 +713,7 @@ body{
     .reviews{
         margin-bottom: 50px;
     }
+
     .gallary-btn {
         display: none;
     }
@@ -724,14 +725,19 @@ body{
 }
 @media(max-width:534px){
     .service-title {
-            font-size: 14px;
-            margin: 0;
-        }
-
+        font-size: 14px;
+        margin: 0;
+    }
+    .reviews-head-text a{
+        font-size: 14px;
+    }
     .text-in-card {
         font-size: 10px;
         line-height: 12px;
     }
+
+        
+
 }
 @media(max-width:450px){
     
@@ -765,5 +771,7 @@ body{
         bottom: -623px;
         right: -129px;
     }
-   
+   .reviews-item {
+       padding: 50px 10px;
+   }
 }
